@@ -1,1 +1,69 @@
 Hello こんにちは。
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキストにスタイル設定</title>
+    <style>
+        /*これはCSSのコメントです*/
+        /*
+        複数行コメント
+        書けちゃいます
+        */
+        h1 {
+                font-size: 2.5em;
+                font-family: cursive;
+                color: #FF0000;
+        }
+        h2{
+            font-size: 2.0;
+            font-family: fantasy;
+            color: rgb(128, 0, 128)
+        }
+        p{
+            font-size: 1.2;
+            font-family: sans-serif;
+            color: blue
+        }
+        span{
+            font: bold italic 1.7em serif;
+            background-color: magenta;
+            color: white
+        }
+        h3{
+            font-size: 200%;
+            color: white !important;/*importantはタグ書きより強い*/
+            background-color: black;
+        }
+        /*後に書いたほうが反映される*/
+        #name{
+            color:black;
+        }
+        h4{
+            background-color: black;
+        }
+        .siro{
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--これはコメントです-->
+    <!--htmlのコメントの使い方-->
+    <h1 >Hello!Nagamuma</h1>
+    <h1 id="name">miffy</h1>
+    <h2>Hello!Nagamuma</h2>
+    <p>This is <span>Sample</span> content.</p>
+    <!--白文字、黒背景、フォントサイズ２００％-->
+    <h3>GUILTY GEAR</h3>
+    <h3 style="color:#00FF00; font-size: 300%;">おためし</h3>
+    <!--タグ直書きが優先-->
+    <h4>1</h4>
+    <h4 class="siro">2</h4>
+    <h4 class="siro">3</h4>
+    <h4>4</h4>
+</body>
+</html>
